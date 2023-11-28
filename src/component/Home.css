@@ -1,0 +1,158 @@
+/* header */
+
+.main_page_haeader {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 5px;
+}
+.header_section {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_section_searchicon {
+  margin-top: 2px;
+  margin-left: 2px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.header_section_searchicon input{
+  height: 90%;
+  width: 95%;
+  border: 0px;
+  background-color: rgba(245, 222, 179, 0);
+}
+
+
+table tbody tr td i {
+  font-size: 13px;
+}
+
+.menuBar {
+  position: absolute;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.menuBar ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(159, 159, 159);
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menuBar ul li:hover {
+  color: yellow;
+}
+
+.task_div_main_area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+}
+
+/* .task_div{
+    border: 2px solid black;
+    margin: 10px 15px ;
+    padding: 10px;
+
+} */
+
+.task_div {
+  border-radius: 10px; /* Adjust the value as needed */
+  background-color: rgb(229, 245, 239); /* Adjust the color as needed */
+  padding: 10px; /* Add padding as needed */
+  margin: 20px;
+}
+#newTask {
+  padding-left: 14px;
+}
+/* .task_div_header{
+    display: flex;
+    justify-content: space-between;
+} */
+.task_div_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.table_area {
+  background-color: aliceblue;
+  margin: 5px 10px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border: 3px solid black;
+  padding: 2px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr td,
+th {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+@media (max-width: 500px) {
+  .table_area {
+    overflow: auto;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  table {
+    font-size: 9px;
+  }
+
+  table tbody tr td i {
+    font-size: 7px;
+  }
+
+  .task_div_main_area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task_div {
+    border-radius: 10px; /* Adjust the value as needed */
+    background-color: #e0e0e0; /* Adjust the color as needed */
+    padding: 10px; /* Add padding as needed */
+    margin-bottom: 10px;
+  }
+
+  .task_div_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+}
+
+.task_div_header h3 {
+  margin: 0;
+}
+
+.task_div_header i {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+b {
+  display: block;
+  margin-bottom: 6px;
+}
+
+p {
+  margin: 0;
+}
